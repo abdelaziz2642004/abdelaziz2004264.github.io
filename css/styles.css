@@ -819,3 +819,52 @@ span {
     }
 
 }
+
+/* General improvements for mobile responsiveness */
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .contact form .input-box input {
+        width: 100%;
+    }
+
+    .home-content h1 {
+        font-size: 4rem; /* Adjusted for smaller screens */
+    }
+
+    .home-content p {
+        font-size: 1.4rem; /* Adjusted for readability */
+    }
+
+    .about-img img {
+        width: 100%; /* Ensure images scale properly */
+        height: auto;
+    }
+
+    .portfolio-container {
+        grid-template-columns: 1fr; /* Single column layout for small screens */
+    }
+
+    .services-container .services-box {
+        flex: 1 1 100%; /* Full width for services boxes */
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .footer p {
+        margin-top: 2rem;
+    }
+}
+
+/* Fix for image downloading weirdly */
+img {
+    object-fit: cover; /* Ensure images fit their containers */
+    max-width: 100%; /* Prevent overflow */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Avoid inline spacing issues */
+}
