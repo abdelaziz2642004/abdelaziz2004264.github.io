@@ -402,11 +402,14 @@ span {
 }
 
 .home-img img {
-    width: 35vw;
+    width: 40vw;
     animation: floatImage 4s ease-in-out infinite;
     max-width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
+    padding-top: 30px; /* or use margin if more appropriate */
+    padding-bottom: 30px;
+    overflow: hidden; /* keeps the image inside its box */
 }
 
 @keyframes floatImage {
@@ -475,15 +478,10 @@ span {
     background: var(--second-bg-color);
 }
 
-.about-img img {
-    width: 40vw;
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
 
-.about-img img, .home-img img {
-    width: 50vw; /* Increase image size */
+
+.about-img img {
+    width: 100vw; /* Increase image size */
     max-width: 100%; /* Prevent overflow */
     height: auto; /* Maintain aspect ratio */
     display: block;
@@ -496,7 +494,7 @@ span {
 }
 
 .about-content h2 {
-    text-align: left;
+    text-align: center;
     line-height: 1.5;
 }
 
@@ -840,6 +838,8 @@ span {
     }
 
     .about-img img {
+        display: none; /* Hide the second image */
+
         width: 100%; /* Ensure images scale properly */
         height: auto;
     }
@@ -900,6 +900,8 @@ span {
     }
 
     .about-img img{
+        display: none; /* Hide the second image */
+
         width: 40vh;
     }
 
