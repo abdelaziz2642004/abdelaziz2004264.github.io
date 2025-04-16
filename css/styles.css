@@ -47,8 +47,6 @@
     border-radius: 10px;
   }
   
-  
-  
   .skills .skills-container {
     display: flex;
     flex-direction: column;
@@ -67,8 +65,6 @@
     font-size: 18px;
     line-height: 1.8;
   }
-  
- 
   
   .contact {
     padding: 50px 20px;
@@ -183,11 +179,12 @@ body {
     background: var(--bg-color);
     color: var(--text-color);
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 section {
-    min-width: 100vh;
-    padding: 10rem 9% 2rem;
+    width: 100%;
+    padding: 10rem 5%;
 }
 
 .header {
@@ -278,7 +275,6 @@ section {
     background-color: rgba(0, 0, 0, 0.8);
   }
   
-  
   .modal-content {
     max-width: 100%;
     max-height: 100%;
@@ -331,7 +327,6 @@ section {
     margin-top: 5px; /* Small space above additional info */
   }
   
-  
   footer .footer-iconTap a {
     background-color: #fff;
     padding: 10px;
@@ -362,6 +357,9 @@ section {
     color: var(--main-color);
 }
 
+.navbar {
+    width: 100%;
+}
 
 #menu-icon {
     font-size: 3.6rem;
@@ -397,6 +395,9 @@ span {
 .home-img img {
     width: 35vw;
     animation: floatImage 4s ease-in-out infinite;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 @keyframes floatImage {
@@ -467,6 +468,9 @@ span {
 
 .about-img img {
     width: 40vw;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .heading {
@@ -542,7 +546,7 @@ span {
 
 .portfolio-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: center;
     gap: 2.5rem;
 }
@@ -655,6 +659,7 @@ span {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    text-align: center;
     padding: 2rem 9%;
     background: var(--second-bg-color);
 }
@@ -681,8 +686,6 @@ span {
     font-size: 2.4rem;
     color: var(--second-bg-color);
 }
-
-
 
 /* breakpoints */
 
@@ -719,6 +722,11 @@ span {
 }
 
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    
     #menu-icon {
         display: block;
     }
@@ -758,8 +766,7 @@ span {
     }
 
     .home-img img {
-        width: 70vw;
-        margin-top: 4rem;
+        width: 80%;
     }
 
     .about {
@@ -767,8 +774,7 @@ span {
     }
 
     .about img {
-        width: 70vh;
-        margin-top: 4rem;
+        width: 80%;
     }
 
     .services h2 {
@@ -780,7 +786,11 @@ span {
     }
 
     .portfolio-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+    }
+
+    .contact .contact-icons {
+        flex-direction: column;
     }
 }
 
@@ -791,37 +801,11 @@ span {
 }
 
 @media (max-width: 450px) {
-    html {
-        font-size: 50%;
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
     }
-
-    .contact form .input-box input {
-        width: 100%;
-    }
-}
-
-@media (max-width: 365px) {
-    .home-img img {
-        width: 90vh;
-    }
-
-    .about-img img{
-        width: 90vh;
-    }
-
-    .footer {
-        flex-direction: column-reverse;
-    }
-
-    .footer p{
-        text-align: center;
-        margin-top: 2rem;
-    }
-
-}
-
-/* General improvements for mobile responsiveness */
-@media (max-width: 450px) {
+    
     html {
         font-size: 50%;
     }
@@ -861,6 +845,58 @@ span {
     }
 }
 
+@media (max-width: 365px) {
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    
+    .home-content h1 {
+        font-size: 3.6rem; /* Adjusted for smaller screens */
+    }
+
+    .home-content h3 {
+        font-size: 2.4rem; /* Adjusted for smaller screens */
+    }
+
+    .home-content p {
+        font-size: 1.4rem; /* Adjusted for readability */
+    }
+    .home-content h1 {
+        font-size: 3.6rem; /* Adjusted for smaller screens */
+    }
+
+    .home-content h3 {
+        font-size: 2.4rem; /* Adjusted for smaller screens */
+    }
+
+    .home-content p {
+        font-size: 1.4rem; /* Adjusted for readability */
+    }
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    
+    .home-img img {
+        width: 40vh;
+    }
+
+    .about-img img{
+        width: 40vh;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer p{
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+}
+
 /* Fix for image downloading weirdly */
 img {
     object-fit: cover; /* Ensure images fit their containers */
@@ -868,3 +904,4 @@ img {
     height: auto; /* Maintain aspect ratio */
     display: block; /* Avoid inline spacing issues */
 }
+
