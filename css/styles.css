@@ -9,6 +9,15 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+section, .header, .footer, .about, .services, .portfolio, .contact {
+    max-width: 100vw; /* Ensure sections do not exceed viewport width */
+    overflow-x: hidden; /* Prevent overflow within sections */
+}
+
 /* Modal styles */
 .modal {
     display: none; /* Hidden by default */
@@ -473,6 +482,13 @@ span {
     display: block;
 }
 
+.about-img img, .home-img img {
+    width: 50vw; /* Increase image size */
+    max-width: 100%; /* Prevent overflow */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+}
+
 .heading {
     text-align: center;
     font-size: 5rem;
@@ -723,74 +739,75 @@ span {
 
 @media (max-width: 768px) {
     body {
-        overflow-x: hidden;
-        overflow-y: auto;
-    }
-    
-    #menu-icon {
-        display: block;
+        overflow-x: hidden; /* Ensure no horizontal scrolling on smaller screens */
     }
 
     .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 1rem 3%;
-        background: var(--bg-color);
-        border-top: .1rem solid rgba(0, 0, 0, .2);
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-        display: none;
+        width: 100%; /* Ensure navbar fits within the viewport */
     }
 
-    .navbar.active {
-        display: block;
+    .home-img img, .about-img img {
+        max-width: 100%; /* Prevent images from exceeding viewport width */
     }
 
-    .navbar a {
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
+    .portfolio-container, .services-container {
+        grid-template-columns: 1fr; /* Single column layout for small screens */
+    }
+
+    .contact form .input-box input {
+        width: 100%; /* Ensure inputs fit within the viewport */
+    }
+
+    /* Phone mode: Stack first image above text and hide the second image */
+    .about {
+        flex-direction: column; /* Stack content vertically */
+    }
+
+    .about-img img:nth-of-type(2) {
+        display: none; /* Hide the second image */
+    }
+
+    .about-img img:nth-of-type(1) {
+        width: 100%; /* Make the first image take full width */
+    }
+
+    .about-content {
+        text-align: center; /* Center-align the text */
     }
 
     .home {
-        flex-direction: column;
+        flex-direction: column; /* Stack content vertically */
     }
 
-    .home-content h3 {
-        font-size: 2.6rem;
+    .home-img img:nth-of-type(2) {
+        display: none; /* Hide the second image */
     }
 
-    .home-content h1 {
-        font-size: 5rem;
+    .home-img img:nth-of-type(1) {
+        width: 100%; /* Make the first image take full width */
     }
 
-    .home-img img {
-        width: 80%;
+    .home-content {
+        text-align: center; /* Center-align the text */
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%; /* Adjust font size for smaller screens */
     }
 
-    .about {
-        flex-direction: column;
+    .home-content h1, .home-content h3, .home-content p {
+        font-size: smaller; /* Adjust text size for readability */
     }
 
-    .about img {
-        width: 80%;
+    .footer {
+        flex-direction: column-reverse; /* Stack footer elements vertically */
     }
 
-    .services h2 {
-        margin-bottom: 3rem;
-    }
-
-    .portfolio h2 {
-        margin-bottom: 3rem;
-    }
-
-    .portfolio-container {
-        grid-template-columns: 1fr;
-    }
-
-    .contact .contact-icons {
-        flex-direction: column;
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
     }
 }
 
