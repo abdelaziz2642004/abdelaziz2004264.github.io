@@ -1,329 +1,727 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abdelaziz Alarabi</title>
-    <link rel="icon" href="images/portfolio.png" type="image/x-icon" />
 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdelaziz Ali Al-Araby | Mobile App Developer</title>
+  <meta name="description"
+    content="Portfolio of Abdelaziz Ali Al-Araby – Flutter Developer, Fullstack Engineer, and AI enthusiast based in Giza, Egypt." />
+  <link rel="icon" href="images/portfolio.png" type="image/x-icon" />
 
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins&family=Questrial&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
 
-    <!-- boxicons -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- header -->
-    <header class="header">
-      <a href="#" class="logo">Portfolio</a>
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
-      <i class="bx bx-menu" id="menu-icon"></i>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
 
-      <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#portfolio">Projects</a>
-        <a href="#achievements">Achievement</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+<body>
 
-    <!-- Home Section -->
+  <!-- ─── HEADER / NAV ─── -->
+  <header class="header" id="header">
+    <a href="#home" class="logo">
+      <span class="logo-bracket">&lt;</span>Abdelaziz<span class="logo-bracket">/&gt;</span>
+    </a>
 
-    <section class="home" id="home">
-      <div class="home-content">
-        <h3>Hello, It's Me</h3>
-        <h1>Abdelaziz Ali Alaraby</h1>
-        <h3>And I'm a <span class="multiple-text"></span></h3>
+    <i class="bx bx-menu" id="menu-icon"></i>
+
+    <nav class="navbar" id="navbar">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#achievements" class="nav-link">Achievements</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="home">
+    <!-- Animated particles background -->
+    <div class="particles" id="particles"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for opportunities
+      </div>
+
+      <!-- Mobile-only profile image -->
+      <div class="hero-img-mobile">
+        <div class="hero-img-glow"></div>
+        <img src="images/profile.png" alt="Abdelaziz Ali Al-Araby" />
+      </div>
+
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Abdelaziz Ali<br /><span class="gradient-text">Al-Araby</span></h1>
+      <div class="typed-wrapper">
+        <span class="typed-prefix">I build&nbsp;</span>
+        <span class="multiple-text"></span>
+      </div>
+      <p class="hero-bio">
+        Flutter Developer &amp; Fullstack developer-in-progress — crafting cross-platform apps with Flutter, diving deep
+        into .NET backend through DEPI, and exploring LangChain, LangGraph &amp; MCP.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="https://drive.google.com/uc?export=download&id=1AHd4jn0sfDDoUCMsR4XgSyfh-ni6yliz"
+          class="btn btn-outline" target="_blank">
+          <i class="bx bx-download"></i> Download CV
+        </a>
+      </div>
+
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/abdelaziz-ali-al-arabi-94ab67292/" target="_blank" aria-label="LinkedIn"
+          class="social-icon">
+          <i class="bx bxl-linkedin"></i>
+        </a>
+        <a href="https://github.com/abdelaziz2642004" target="_blank" aria-label="GitHub" class="social-icon">
+          <i class="bx bxl-github"></i>
+        </a>
+        <a href="https://codeforces.com/profile/lateBind" target="_blank" aria-label="Codeforces" class="social-icon">
+          <i class="bx bx-code-alt"></i>
+        </a>
+        <a href="mailto:abdelaziz2004264@gmail.com" aria-label="Email" class="social-icon">
+          <i class="bx bx-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-img-wrapper">
+        <div class="hero-img-glow"></div>
+        <img src="images/profile.png" alt="Abdelaziz Ali Al-Araby" class="hero-img" />
+      </div>
+      <!-- Floating tech cards -->
+      <div class="tech-card tc-1"><i class="bx bxl-flutter"></i> Flutter</div>
+      <div class="tech-card tc-2"><i class="bx bxl-firebase"></i> Firebase</div>
+      <div class="tech-card tc-3"><i class="bx bx-bot"></i> Agentic AI</div>
+      <div class="tech-card tc-4"><i class="bx bxl-dot-net"></i> .NET</div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll down</span>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section class="about" id="about">
+    <div class="section-header">
+      <span class="section-label">Background</span>
+      <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text">
         <p>
-          Enthusiastic Mobile App Developer with hands-on experience in building cross-platform applications using
-          Flutter and Firebase. Proficient in state management, API integration, and crafting responsive UI designs.
+          I'm an enthusiastic <strong>Mobile App Developer</strong> with a passion for building beautiful,
+          cross-platform experiences using Flutter. My backend toolkit is growing rapidly — currently enrolled in
+          <strong>DEPI (Full Stack Development)</strong> with a focus on <strong>.NET</strong>, aiming to become a
+          well-rounded Fullstack Mobile / Software Engineer.
         </p>
-        <div class="social-media">
-          <a href="tel:+201015423492" class="contact-item">
+        <p>
+          On top of that, I've been diving into the world of <strong>Agentic AI</strong> — completing courses in
+          LangChain, LangGraph, and MCP (Model Context Protocol), fascinated by how autonomous AI systems and AI agents
+          can collaborate to solve real-world problems.
+        </p>
+        <p>
+          I thrive on continuous learning, community, and shipping meaningful software. Strong foundation in DSA, OOP,
+          and clean architectural patterns like MVVM.
+        </p>
+
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">Problems Solved</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">7+</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">3.26</span>
+            <span class="stat-label">GPA / 4.0</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-aside">
+        <div class="edu-card">
+          <div class="edu-icon"><i class="bx bxs-graduation"></i></div>
+          <div class="edu-details">
+            <h3>BSc Computer Science</h3>
+            <p>Faculty of Computers &amp; AI, Cairo University (FCAI-CU)</p>
+            <span class="edu-meta">2022 – 2026 &nbsp;|&nbsp; GPA 3.26/4.0</span>
+          </div>
+        </div>
+
+        <div class="info-list">
+          <div class="info-item">
+            <i class="bx bx-map-pin"></i>
+            <span>Giza, Egypt</span>
+          </div>
+          <div class="info-item">
             <i class="bx bx-phone"></i>
-          </a>
-          <a href="mailto:abdelaziz2004264@gmail.com" class="contact-item">
+            <a href="tel:+201015423492">+20 101 542 3492</a>
+          </div>
+          <div class="info-item">
             <i class="bx bx-envelope"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/abdelaziz-ali-al-arabi-94ab67292/" target="_blank" class="contact-item">
-            <i class="bx bxl-linkedin"></i>
-          </a>
-          <a href="https://github.com/abdelaziz2642004" target="_blank" class="contact-item">
-            <i class="bx bxl-github"></i>
-          </a>
-          <a href="https://codeforces.com/profile/Perspicacious_G" target="_blank" class="contact-item">
-            <i class="bx bx-code"></i>
-          </a>
+            <a href="mailto:abdelaziz2004264@gmail.com">abdelaziz2004264@gmail.com</a>
+          </div>
+          <div class="info-item">
+            <i class="bx bx-flag"></i>
+            <span>Arabic (Native) · English (C1)</span>
+          </div>
         </div>
-        <a href="https://drive.google.com/uc?export=download&id=1AHd4jn0sfDDoUCMsR4XgSyfh-ni6yliz" class="btn">Download CV</a>
       </div>
-    
-      <div class="home-img">
-        <img src="images/profile.png" alt="" />
-      </div>
-    </section>
-    
+    </div>
+  </section>
 
-    <!-- about -->
-    <section class="about" id="about">
-      <div class="about-img">
-        <img src="images/about.png" alt="" />
+  <!-- ─── EXPERIENCE ─── -->
+  <section class="experience" id="experience">
+    <div class="section-header">
+      <span class="section-label">My Journey</span>
+      <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div>
+              <h3>DEPI – Full Stack Development Track</h3>
+              <p class="timeline-company"><i class="bx bx-buildings"></i> Digital Egypt Pioneers Initiative (DEPI)</p>
+            </div>
+            <span class="timeline-date">Nov 2025 – Present</span>
+          </div>
+          <p>Enrolled in Egypt's national DEPI program, specializing in Full Stack development with a focus on
+            <strong>.NET technologies</strong> — learning C#, building REST APIs, working with databases, and growing
+            from a Mobile-first developer into a Fullstack / Software Engineer.</p>
+          <div class="timeline-tags">
+            <span>.NET</span><span>C#</span><span>REST APIs</span><span>SQL</span><span>LINQ</span>
+          </div>
+        </div>
       </div>
 
-      <div class="about-content">
-        <h2 class="heading">About <span>Me</span></h2>
-        <h3>Mobile App Developer!</h3>
-        <p>
-          Enthusiastic Mobile App Developer with hands-on experience in building cross-platform applications using
-          Flutter and Firebase. Proficient in state management, API integration, and crafting responsive UI designs.
-          Successfully developed key features such as user authentication, theme switching, and real-time database
-          interactions. Passionate about continuous problem-solving and improving technical skills daily. Strong
-          foundation in data structures, algorithms, and object-oriented programming (OOP). Eager to contribute to
-          a dynamic development environment while creating impactful, user-centric applications.
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div>
+              <h3>AI Model Trainer (Remote)</h3>
+              <p class="timeline-company"><i class="bx bx-buildings"></i> Outlier</p>
+            </div>
+            <span class="timeline-date">Apr 2025 – Present</span>
+          </div>
+          <p>Trained and aligned large language models to produce high-quality, contextually accurate responses.
+            Reviewed, rated, and provided structured feedback on AI outputs based on detailed guidelines — directly
+            improving model behaviour and reducing hallucinations.</p>
+          <div class="timeline-tags">
+            <span>RLHF</span><span>AI Alignment</span><span>Prompt Evaluation</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div>
+              <h3>EgronX Software Training Program</h3>
+              <p class="timeline-company"><i class="bx bx-buildings"></i> EgronX</p>
+            </div>
+            <span class="timeline-date">Jan 2025 – Oct 2025</span>
+          </div>
+          <p>Served as <strong>Scrum Master</strong>, managing Agile sprints and enhancing cross-team collaboration.
+            Gained practical backend experience with Spring Boot and contributed to <strong>Petify</strong> — an
+            AI-driven cross-platform pet care application.</p>
+          <div class="timeline-tags">
+            <span>Scrum Master</span><span>Spring Boot</span><span>Agile</span><span>Flutter</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div>
+              <h3>Flutter Committee Member</h3>
+              <p class="timeline-company"><i class="bx bx-buildings"></i> Minders &amp; Google GDG MTI</p>
+            </div>
+            <span class="timeline-date">Aug 2025 – Oct 2025</span>
+          </div>
+          <p>Collaborated on Flutter-based community projects using various state management techniques. Participated in
+            code reviews, tech events, and community-driven development to upskill fellow developers.</p>
+          <div class="timeline-tags">
+            <span>Flutter</span><span>BLoC</span><span>Riverpod</span><span>Community</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div>
+              <h3>English Teacher</h3>
+              <p class="timeline-company"><i class="bx bx-buildings"></i> Gateway English Community</p>
+            </div>
+            <span class="timeline-date">Jul 2021 – Dec 2023</span>
+          </div>
+          <p>Taught English communication and grammar to diverse student groups. Delivered <strong>100+
+              sessions</strong>, developing strong instructional and communication skills across bilingual
+            (Arabic/English) settings.</p>
+          <div class="timeline-tags">
+            <span>Teaching</span><span>Communication</span><span>Leadership</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ─── -->
+  <section class="projects" id="projects">
+    <div class="section-header">
+      <span class="section-label">What I've Built</span>
+      <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+    </div>
+
+    <!-- Filter tabs -->
+    <div class="filter-tabs">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="flutter">Flutter</button>
+      <button class="filter-btn" data-filter="backend">Backend</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="cs">C++/Python</button>
+    </div>
+
+    <div class="projects-grid" id="projects-grid">
+
+      <!-- Zentry -->
+      <div class="project-card featured" data-category="flutter">
+        <div class="project-card-inner">
+          <div class="project-img-wrap">
+            <img src="images/port3.jpg" alt="Zentry App" class="project-img" />
+            <div class="project-overlay">
+              <span class="project-status in-progress">🚧 In Progress</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <span class="project-category">Flutter</span>
+              <a href="https://github.com/abdelaziz2642004" target="_blank" class="project-link" aria-label="GitHub"><i
+                  class="bx bxl-github"></i></a>
+            </div>
+            <h3 class="project-title">Zentry – Real-Time Pomodoro Study Rooms</h3>
+            <p class="project-desc">Real-time Pomodoro app enabling users to join virtual study rooms, stay focused, and
+              track productivity. Built with clean MVVM architecture for scalability.</p>
+            <div class="project-stack">
+              <span>Flutter</span><span>Bloc/Cubit</span><span>Firebase Firestore</span><span>Realtime DB</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- QuranApp IRTAQY -->
+      <div class="project-card" data-category="flutter">
+        <div class="project-card-inner">
+          <div class="project-img-wrap">
+            <img src="images/port3.jpg" alt="IRTAQY Quran App" class="project-img" />
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <span class="project-category">Flutter</span>
+              <a href="https://github.com/abdelaziz2642004/Flutter-Projects/tree/main/IRTAQY%20-%20Quran_App"
+                target="_blank" class="project-link" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+            </div>
+            <h3 class="project-title">QuranApp (IRTAQY)</h3>
+            <p class="project-desc">Quran reading app with offline access, verse audio playback, tafsir, and
+              personalization features. Modular MVVM architecture using Riverpod + Bloc/Cubit.</p>
+            <div class="project-stack">
+              <span>Flutter</span><span>Riverpod</span><span>Bloc/Cubit</span><span>Quran.com API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coffee Shop -->
+      <div class="project-card" data-category="flutter">
+        <div class="project-card-inner">
+          <div class="project-img-wrap">
+            <img src="images/port2.jpg" alt="Coffee Shop App" class="project-img" />
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <span class="project-category">Flutter</span>
+              <a href="https://github.com/abdelaziz2642004/Flutter-Projects/tree/main/CoffeeApp" target="_blank"
+                class="project-link" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+            </div>
+            <h3 class="project-title">Coffee Shop App</h3>
+            <p class="project-desc">Mobile app for browsing and ordering coffee products with real-time Firebase backend
+              — authentication, Firestore data handling, and Riverpod state management.</p>
+            <div class="project-stack">
+              <span>Flutter</span><span>Riverpod</span><span>Firebase</span><span>Firestore</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flutter Projects Repo -->
+      <div class="project-card" data-category="flutter">
+        <div class="project-card-inner">
+          <div class="project-img-wrap">
+            <img src="images/port1.jpg" alt="Flutter Projects" class="project-img" />
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <span class="project-category">Flutter</span>
+              <a href="https://github.com/abdelaziz2642004/Flutter-Projects" target="_blank" class="project-link"
+                aria-label="GitHub"><i class="bx bxl-github"></i></a>
+            </div>
+            <h3 class="project-title">Flutter Projects Repository</h3>
+            <p class="project-desc">A growing collection of Flutter mini-apps and experiments — from meal planning
+              (Aklatoo) to e-commerce UIs — demonstrating different state management and architecture patterns.</p>
+            <div class="project-stack">
+              <span>Flutter</span><span>Dart</span><span>Firebase</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LMS -->
+      <div class="project-card" data-category="backend">
+        <div class="project-card-inner">
+          <div class="project-img-wrap">
+            <img src="images/port5.jpg" alt="Learning Management System" class="project-img" />
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <span class="project-category">Backend</span>
+              <a href="https://github.com/OsamaMohamedM/Learning-Management-System" target="_blank" class="project-link"
+                aria-label="GitHub"><i class="bx bxl-github"></i></a>
+            </div>
+            <h3 class="project-title">Learning Management System</h3>
+            <p class="project-desc">Full-featured LMS with student, instructor, and admin roles — course creation,
+              quizzes, assignments, and complete user management built on Spring Boot.</p>
+            <div class="project-stack">
+              <span>Spring Boot</span><span>Java</span><span>REST API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Library Website -->
+      <div class="project-card" data-category="web">
+        <div class="project-card-inner">
+          <div class="project-img-wrap">
+            <img src="images/port6.png" alt="Library Management Website" class="project-img" />
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <span class="project-category">Web</span>
+              <a href="https://github.com/Omar-Mahmoud-25/Web-Project" target="_blank" class="project-link"
+                aria-label="GitHub"><i class="bx bxl-github"></i></a>
+            </div>
+            <h3 class="project-title">Library Management Website</h3>
+            <p class="project-desc">Web app for managing student and book records with a secure Django backend,
+              efficient record management, and clean HTML/CSS/JS frontend.</p>
+            <div class="project-stack">
+              <span>Django</span><span>Python</span><span>HTML/CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data Structures -->
+      <div class="project-card" data-category="cs">
+        <div class="project-card-inner">
+          <div class="project-img-wrap">
+            <img src="images/port4.jpg" alt="Data Structures" class="project-img" />
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <span class="project-category">C++ / Python</span>
+              <a href="https://github.com/Habiba-mohammed/practice-in-data-structure" target="_blank"
+                class="project-link" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+            </div>
+            <h3 class="project-title">Implemented Data Structures</h3>
+            <p class="project-desc">From-scratch implementations of BSTs, Red-Black Trees, Heaps, Sorting and Searching
+              algorithms — optimised for performance and correctness.</p>
+            <div class="project-stack">
+              <span>C++</span><span>Python</span><span>Algorithms</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ─── -->
+  <section class="skills" id="skills">
+    <div class="section-header">
+      <span class="section-label">What I Know</span>
+      <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+    </div>
+
+    <div class="skills-grid">
+
+      <div class="skill-group">
+        <div class="skill-group-header">
+          <i class="bx bx-mobile-alt"></i>
+          <h3>Mobile Development</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag level-3">Flutter</span>
+          <span class="skill-tag level-3">Dart</span>
+          <span class="skill-tag level-3">Bloc/Cubit</span>
+          <span class="skill-tag level-3">Riverpod</span>
+          <span class="skill-tag level-2">Provider</span>
+          <span class="skill-tag level-3">MVVM</span>
+          <span class="skill-tag level-2">RESTful APIs</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-header">
+          <i class="bx bx-server"></i>
+          <h3>Backend &amp; Fullstack</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag level-2">C#</span>
+          <span class="skill-tag level-2">.NET</span>
+          <span class="skill-tag level-1">LINQ</span>
+          <span class="skill-tag level-1">Entity Framework</span>
+          <span class="skill-tag level-1">REST APIs</span>
+          <span class="skill-tag level-2">FastAPI</span>
+          <span class="skill-tag level-2">Spring Boot</span>
+          <span class="skill-tag level-1">Django</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-header">
+          <i class="bx bxl-firebase"></i>
+          <h3>Databases &amp; Storage</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag level-2">SQL</span>
+          <span class="skill-tag level-2">SQL Server</span>
+          <span class="skill-tag level-3">Firebase Firestore</span>
+          <span class="skill-tag level-3">Firebase Realtime DB</span>
+          <span class="skill-tag level-2">Supabase</span>
+          <span class="skill-tag level-2">SQLite</span>
+          <span class="skill-tag level-2">Hive</span>
+          <span class="skill-tag level-2">Shared Preferences</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-header">
+          <i class="bx bx-bot"></i>
+          <h3>Agentic AI &amp; LLMs</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag level-2">LangChain</span>
+          <span class="skill-tag level-2">LangGraph</span>
+          <span class="skill-tag level-2">MCP (Model Context Protocol)</span>
+          <span class="skill-tag level-1">Agentic AI</span>
+          <span class="skill-tag level-1">RAG</span>
+          <span class="skill-tag level-1">Prompt Engineering</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-header">
+          <i class="bx bx-code-block"></i>
+          <h3>Languages</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag level-3">Dart</span>
+          <span class="skill-tag level-3">C++</span>
+          <span class="skill-tag level-2">C#</span>
+          <span class="skill-tag level-2">Python</span>
+          <span class="skill-tag level-2">Java</span>
+          <span class="skill-tag level-1">C</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-header">
+          <i class="bx bx-wrench"></i>
+          <h3>Tools &amp; AI Tooling</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag level-3">Git &amp; GitHub</span>
+          <span class="skill-tag level-3">Android Studio</span>
+          <span class="skill-tag level-2">Postman</span>
+          <span class="skill-tag level-2">Firebase Console</span>
+          <span class="skill-tag level-2">Supabase</span>
+          <span class="skill-tag level-2">Claude Code</span>
+          <span class="skill-tag level-2">Antigravity</span>
+          <span class="skill-tag level-1">Tavily</span>
+          <span class="skill-tag level-1">Cursor IDE</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Skill level legend -->
+    <div class="skill-legend">
+      <span><span class="dot level-3"></span> Proficient</span>
+      <span><span class="dot level-2"></span> Intermediate</span>
+      <span><span class="dot level-1"></span> Learning</span>
+    </div>
+  </section>
+
+  <!-- ─── ACHIEVEMENTS ─── -->
+  <section class="achievements" id="achievements">
+    <div class="section-header">
+      <span class="section-label">Milestones</span>
+      <h2 class="section-title">My <span class="gradient-text">Achievements</span></h2>
+    </div>
+
+    <div class="achievements-highlights">
+      <div class="achievement-highlight-card">
+        <i class="bx bx-trophy"></i>
+        <h3>500+ Problems</h3>
+        <p>Solved on Codeforces &amp; LeetCode, with a maximum rating of <strong>1200+ (Pupil)</strong> on Codeforces
         </p>
-        <div class="edu">
-          <h3>BSc - Computer Science</h3>
-          <p>Faculty of Computers and Artificial Intelligence, Cairo University (FCAI-CU) (2022–2026)</p>
-          <p><strong>GPA:</strong> 3.32/4.0</p>
-        </div>
-     
       </div>
-    </section>
-
-    <!-- Portfolio Section -->
-
-    <section class="portfolio" id="portfolio">
-      <h2 class="heading">Latest <span>Projects</span></h2>
-
-      <div class="portfolio-container">
-        <div class="portfolio-box">
-          <img src="images/port1.jpg" alt="" />
-          <div class="portfolio-layer">
-            <h4>Aklatoo</h4>
-            <p>
-              Meal Planning Application
-            </p>
-            <a href="https://github.com/abdelaziz2642004/Flutter-Projects/tree/main/aklat"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img src="images/port2.jpg" alt="" />
-          <div class="portfolio-layer">
-            <h4>CoffeeApp</h4>
-            <p>
-              Coffee Shop Application
-            </p>
-            <a href="https://github.com/abdelaziz2642004/Flutter-Projects/tree/main/CoffeeApp"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img src="images/port3.jpg" alt="" />
-          <div class="portfolio-layer">
-            <h4>IRTAQY - Quran App</h4>
-            <p>
-             ( Still under progress ) Quran Application for Recitation and Tafsir
-            </p>
-            <a href="https://github.com/abdelaziz2642004/Flutter-Projects/tree/main/IRTAQY%20-%20Quran_App"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img src="images/port4.jpg" alt="" />
-          <div class="portfolio-layer">
-            <h4>Implemented Data Structures</h4>
-            <p>
-              Some advanced data structures that I implemented during my studies
-            </p>
-            <a href="https://github.com/Habiba-mohammed/practice-in-data-structure"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img src="images/port5.jpg" alt="" />
-          <div class="portfolio-layer">
-            <h4>Learning Management System</h4>
-            <p>
-              Learning Management System with Springboot
-            </p>
-            <a href="https://github.com/OsamaMohamedM/Learning-Management-System"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img src="images/port6.png" alt="" />
-          <div class="portfolio-layer">
-            <h4>Library Management Website</h4>
-            <p>
-              Using Django and Javascript with html and css
-            </p>
-            <a href="https://github.com/Omar-Mahmoud-25/Web-Project"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-
-        </div>
+      <div class="achievement-highlight-card">
+        <i class="bx bx-award"></i>
+        <h3>ECPC Participant</h3>
+        <p>Participated in ECPC 2023 &amp; ECPC 2024</p>
       </div>
-    </section>
-    <section class="achievements" id="achievements">
-      <h2 class="heading">My <span>Achievements</span></h2>
-      
-      <div class="achievements-container-wrapper">
-        <div class="achievements-container">
-          <div class="achievement-box" onclick="openImage('images/1.png')">
-            <img src="images/1.png" alt="Achievement 1" />
-          </div>
-          <div class="achievement-box" onclick="openImage('images/2.png')">
-            <img src="images/2.png" alt="Achievement 2" />
-          </div>
-          <div class="achievement-box" onclick="openImage('images/3.png')">
-            <img src="images/3.png" alt="Achievement 3" />
-          </div>
-          <div class="achievement-box" onclick="openImage('images/4.png')">
-            <img src="images/4.png" alt="Achievement 4" />
-          </div>
-       
-        </div>
+      <div class="achievement-highlight-card">
+        <i class="bx bx-brain"></i>
+        <h3>AI Courses Completed</h3>
+        <p>Finished courses in LangChain, LangGraph, and MCP — actively building with Agentic AI</p>
       </div>
-    </section>
-    
-    <!-- Image Modal -->
-<!-- Image Modal -->
-<div id="image-modal" class="modal">
-  <div class="modal-content">
-    <span id="close-modal" class="close">X</span> <!-- This is now the exit button -->
-    <img id="modal-img" class="modal-img" src="" alt="Achievement Image" />
+      <div class="achievement-highlight-card">
+        <i class="bx bx-group"></i>
+        <h3>Community Builder</h3>
+        <p>Former committee member at GDG MTI &amp; Minders — organizing events &amp; mentoring peers</p>
+      </div>
+    </div>
+
+    <!-- Certificate gallery -->
+    <h3 class="gallery-title">Certificate Gallery</h3>
+    <div class="cert-gallery">
+      <div class="cert-card" onclick="openModal('images/1.png')">
+        <img src="images/1.png" alt="Certificate 1" />
+        <div class="cert-overlay"><i class="bx bx-zoom-in"></i></div>
+      </div>
+      <div class="cert-card" onclick="openModal('images/2.png')">
+        <img src="images/2.png" alt="Certificate 2" />
+        <div class="cert-overlay"><i class="bx bx-zoom-in"></i></div>
+      </div>
+      <div class="cert-card" onclick="openModal('images/3.png')">
+        <img src="images/3.png" alt="Certificate 3" />
+        <div class="cert-overlay"><i class="bx bx-zoom-in"></i></div>
+      </div>
+      <div class="cert-card" onclick="openModal('images/4.png')">
+        <img src="images/4.png" alt="Certificate 4" />
+        <div class="cert-overlay"><i class="bx bx-zoom-in"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── IMAGE MODAL ─── -->
+  <div id="image-modal" class="modal" role="dialog" aria-modal="true">
+    <div class="modal-backdrop" onclick="closeModal()"></div>
+    <div class="modal-body">
+      <button class="modal-close" onclick="closeModal()" aria-label="Close"><i class="bx bx-x"></i></button>
+      <img id="modal-img" src="" alt="Certificate" />
+    </div>
   </div>
-</div>
 
-    </section>
-        <!-- Skills -->
-        <section class="skills" id="skills">
-          <h2 class="heading">My <span>Skills</span></h2>
-          <div class="skills-container">
-            <h3>Experience</h3>
-            <ul>
-              <li>Solved 500+ problems with max rating 1200+ (Pupil) on Codeforces & LeetCode.</li>
-              <li>ECPC Qualifications 2023 & 2024 Certificates.</li>
-              <li>Current Flutter Committee Member at Minders & Google GDG MTI.</li>
-              <li>Former English Teacher at Gateway English Community (2+ years experience).</li>
-              <li>Former Sales Agent at Teleperformance and Concentrix (6 months).</li>
-            </ul>
-            <h3>Technical Skills</h3>
-            <ul>
-              <li><strong>Problem Solving & Debugging</strong></li>
-              <li><strong>Flutter Development:</strong> State Management (Riverpod, Bloc Cubit), MVVM structure (Core/Features), Firebase Integration.</li>
-              <li><strong>OOP & Design Patterns</strong></li>
-              <li><strong>Software Design & Architecture</strong></li>
-              <li><strong>Authentication & Security</strong></li>
-              <li><strong>Languages:</strong> C++, Java, Python, Dart (Flutter).</li>
-              <li><strong>Version Control:</strong> Git & GitHub.</li>
-              <li><strong>Soft Skills:</strong> Teaching, Communication, Fluent in English & Arabic.</li>
-            </ul>
+  <!-- ─── CONTACT ─── -->
+  <section class="contact" id="contact">
+    <div class="section-header">
+      <span class="section-label">Get In Touch</span>
+      <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+    </div>
+
+    <p class="contact-intro">Whether you have an opportunity, a question, or just want to say hi — my inbox is always
+      open!</p>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <a href="tel:+201015423492" class="contact-card">
+          <div class="contact-icon"><i class="bx bx-phone"></i></div>
+          <div>
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">+20 101 542 3492</span>
           </div>
-        </section>
-    
-
-    
-        <section class="contact" id="contact">
-          <h2 class="heading">Contact <span>Information</span></h2>
-          <h2>Email: abdelaziz2004264@gmail.com</h2>
-          <div class="contact-icons">
-            <a href="tel:+201015423492" class="contact-item">
-              <i class='bx bx-phone'></i> 01015423492
-            </a>
-            <a href="mailto:abdelaziz2004264@gmail.com" class="contact-item">
-              <i class='bx bx-envelope'></i> Email
-            </a>
-            <a href="https://www.linkedin.com/in/abdelaziz-ali-al-arabi-94ab67292/" target="_blank" class="contact-item">
-              <i class='bx bxl-linkedin'></i> LinkedIn
-            </a>
-            <a href="https://github.com/abdelaziz2642004" target="_blank" class="contact-item">
-              <i class='bx bxl-github'></i> GitHub
-            </a>
-            <a href="https://codeforces.com/profile/Perspicacious_G" target="_blank" class="contact-item">
-              <i class='bx bx-code'></i> Codeforces
-            </a>
+        </a>
+        <a href="mailto:abdelaziz2004264@gmail.com" class="contact-card">
+          <div class="contact-icon"><i class="bx bx-envelope"></i></div>
+          <div>
+            <span class="contact-label">Email</span>
+            <span class="contact-value">abdelaziz2004264@gmail.com</span>
           </div>
-        </section>
-        
-    
-
-    <script>
-      let scale = 1; // Default scale level
-
-function openImage(src) {
-  const modal = document.getElementById("image-modal");
-  const modalImage = document.getElementById("modal-img");
-
-  modal.style.display = "block";
-  modalImage.src = src;
-
-  // Reset zoom when opening a new image
-  scale = 1;
-  modalImage.style.transform = `scale(${scale})`;
-
-  // Add zoom functionality
-  modalImage.onclick = function () {
-    scale = scale === 1 ? 2 : 1; // Toggle zoom in/out
-    modalImage.style.transform = `scale(${scale})`;
-  };
-}
-
-// Function to close modal
-function closeModal() {
-  document.getElementById("image-modal").style.display = "none";
-}
-
-// Close the modal when clicking on the close button
-document.getElementById("close-modal").onclick = closeModal;
-
-// Close the modal when clicking outside the image
-document.getElementById("image-modal").onclick = function (event) {
-  if (event.target === document.getElementById("image-modal")) {
-    closeModal();
-  }
-};
-
-// Close the modal when pressing ESC
-document.addEventListener("keydown", function (event) {
-  if (event.key === "Escape") {
-    closeModal();
-  }
-});
-
-    </script>
-    
-    <!-- footer -->
-
-    <footer class="footer">
-      <div class="footer-text">
+        </a>
+        <a href="https://www.linkedin.com/in/abdelaziz-ali-al-arabi-94ab67292/" target="_blank" class="contact-card">
+          <div class="contact-icon"><i class="bx bxl-linkedin"></i></div>
+          <div>
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">Connect with me</span>
+          </div>
+        </a>
+        <a href="https://github.com/abdelaziz2642004" target="_blank" class="contact-card">
+          <div class="contact-icon"><i class="bx bxl-github"></i></div>
+          <div>
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">abdelaziz2642004</span>
+          </div>
+        </a>
+        <a href="https://codeforces.com/profile/lateBind" target="_blank" class="contact-card">
+          <div class="contact-icon"><i class="bx bx-code-alt"></i></div>
+          <div>
+            <span class="contact-label">Codeforces</span>
+            <span class="contact-value">lateBind</span>
+          </div>
+        </a>
       </div>
+    </div>
+  </section>
 
-      <div class="footer-iconTap">
-        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
-      </div>
-    </footer>
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <a href="#home" class="footer-logo">
+        <span class="logo-bracket">&lt;</span>Abdelaziz<span class="logo-bracket">/&gt;</span>
+      </a>
+      <p class="footer-copy">© 2025 Abdelaziz Ali Al-Araby. Crafted with ❤️ and lots of ☕</p>
+      <a href="#home" class="back-to-top" aria-label="Back to top">
+        <i class="bx bx-up-arrow-alt"></i>
+      </a>
+    </div>
+  </footer>
 
-    <!-- Scroll reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- ─── SCRIPTS ─── -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="js/script.js"></script>
+</body>
 
-    <!-- typed js -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-    <!-- custom js -->
-    <script src="js/script.js"></script>
-  </body>
 </html>
